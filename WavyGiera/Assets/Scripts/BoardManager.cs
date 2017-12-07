@@ -11,7 +11,7 @@ public class BoardManager : MonoBehaviour {
 
 	public GameObject darkTile;
 	public GameObject lightTile;
-	public Transform boardHolder;
+	private Transform boardHolder;
 
 	public void generuj()
 	{
@@ -21,7 +21,7 @@ public class BoardManager : MonoBehaviour {
 			for(int j = 1; j <= rows; j++)
 			{
 				GameObject kratka;
-				if( ( i + j ) % 2 == 0 )
+				if( ( i + j ) % 2 == 1 )
 					kratka = darkTile;
 				else
 					kratka = lightTile;
