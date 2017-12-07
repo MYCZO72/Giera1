@@ -18,7 +18,7 @@ public class MovingPlayer : MonoBehaviour
 		float movey = Input.GetAxis("Vertical");
 
 		Vector3 ruch = new Vector3( movex, movey, 0f );
-		ruch *= speed;
+		ruch *= speed * Time.deltaTime;
 		Vector3 newposition = this.transform.position;
 		newposition = ruch + newposition;
 		this.transform.position = newposition;
