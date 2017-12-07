@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 1572109413
+    locked: 0
+  - name: Monster
+    uniqueID: 3108880213
+    locked: 0
+  - name: Bulletetc
+    uniqueID: 1192415955
+    locked: 0
+  - name: Player
+    uniqueID: 705109987
+    locked: 0

@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e49883db370674795fbae8c3e0b888, type: 3}
   m_Name: PixelSettings
   m_EditorClassIdentifier: 
-  pixelsPerUnit: 32
+  pixelsPerUnit: 16
