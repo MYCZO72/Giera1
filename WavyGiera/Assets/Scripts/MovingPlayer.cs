@@ -12,13 +12,15 @@ public class MovingPlayer : MonoBehaviour
 		gracz = GetComponent<Rigidbody2D>();	
 	}
 
-	void FixedUpdate()
+	void Update()
 	{
 		float movex = Input.GetAxis("Horizontal");
 		float movey = Input.GetAxis("Vertical");
 
 		Vector3 ruch = new Vector3( movex, movey, 0f );
-
-		gracz.AddForce( ruch * speed );
+		ruch *= speed;
+		Vector3 newposition = this.transform.position;
+		newposition = ruch + newposition;
+		this.transform.position = newposition;
 	}
 }
